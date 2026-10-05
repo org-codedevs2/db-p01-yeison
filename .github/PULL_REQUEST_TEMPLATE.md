@@ -10,4 +10,3 @@ Resumen de las funcionalidades o ajustes agregados a la aplicación **ARKA**.
 ## Checklist
 - [ ] Código alineado con la arquitectura Django del proyecto ARKA.
 - [ ] Verificación de formularios y validaciones de entrada.
-- [ ] Cumplimiento con la seguridad de datos personales.

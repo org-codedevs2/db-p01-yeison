@@ -1,0 +1,21 @@
+name: Suma Automática al Hacer Push
+
+on:
+  push:
+    branches: [ "develop" ]  # Se activará específicamente en tu rama de trabajo
+
+jobs:
+  ejecutar-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Descargar código del repositorio
+      uses: actions/checkout@v4
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Correr script de Python
+      run: python main.py
